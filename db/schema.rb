@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160126102309) do
+ActiveRecord::Schema.define(version: 20160126164728) do
 
   create_table "cars", force: :cascade do |t|
     t.string   "brand"
@@ -19,8 +19,10 @@ ActiveRecord::Schema.define(version: 20160126102309) do
     t.integer  "year"
     t.string   "photo"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.string   "cars"
+    t.boolean  "sale",        default: false
   end
 
 end

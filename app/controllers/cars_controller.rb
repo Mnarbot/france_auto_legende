@@ -21,8 +21,12 @@ class CarsController < ApplicationController
 		end
   	end
 
-	def show
-  	end
+	 def show
+  end
+
+  def sale
+    @cars = Car.where(:sale => true)
+  end
 
   	def edit                                                                                                                  
   	end

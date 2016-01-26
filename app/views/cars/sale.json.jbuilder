@@ -7,5 +7,4 @@ json.cars @cars do |car|
 	json.model car.model
 	json.photo car.photo
 	json.description car.description
-	json.sale car.sale
 end
