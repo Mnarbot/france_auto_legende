@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
       if parts[1] == Rails.application.secrets.secret_key_base
       	@ApiKey = token
       else
-        render json: { message: parts[1] }, status: :unauthorized
+        render json: { message: 'Wrong token' }, status: :unauthorized
       end
     end
 
